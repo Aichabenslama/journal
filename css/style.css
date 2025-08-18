@@ -74,6 +74,7 @@ nav{
   flex-flow: row nowrap;
   justify-content: space-between;
   font-size: 14px;
+  padding: 1rem;
 }
 /* content */
 .content{
@@ -83,6 +84,11 @@ nav{
   padding: 1.6rem 0rem;
   color: #635e5e;
   border-bottom: 1px solid #e6e6e6;
+}
+em i {
+  font-size: small;
+  margin: 0 0.5rem;
+
 }
 .content h3{
   color: black;
@@ -97,7 +103,7 @@ nav{
 .content h5{
   color: black;
 }
-.content article i {
+.content article  i {
   margin: 0rem 0.5rem;
 }
 .content p{
@@ -136,7 +142,7 @@ nav{
 }
 .bloc em {
   grid-area: em;
-  margin: 0.5rem 0;
+  
 }
 /* ads */
 .ads{
@@ -195,6 +201,68 @@ nav{
   border: 1px solid black;
   color: black;
   background: whitesmoke;
+}
+/* vp */
+.vp{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 2rem 0;
+  
+}
+.ligne{
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 0.5rem;
+}
+
+.articles article{
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas: 
+  "h3 img"
+  "p img"
+  "h5 img"
+  "em ."
+  ;
+  margin-bottom: 1.5rem;
+
+}
+.articles img {
+  grid-area: img;
+  max-width: 80px;
+  margin-left: 1rem;
+}
+.articles h3{
+  grid-area: h3;
+}
+.articles p{
+  grid-area: p;
+}
+.articles h5{
+  grid-area: h5;
+}
+.articles em {
+  grid-area: em;
+}
+/* populaires */
+.populaires{
+  padding: 0 3rem;
+
+}
+.populaires ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 60px auto;
+  place-items: center center;
+
+}
+.populaires ul li h3{
+  margin: 0;
+}
+.populaires ul li div:nth-child(1){
+  font-size: 2rem;
 }
   
 
