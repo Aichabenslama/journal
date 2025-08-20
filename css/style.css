@@ -212,13 +212,13 @@ em i {
 .ligne{
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #e6e6e6;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .articles article{
   display: grid;
   grid-template-columns: 1fr 80px;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 1fr ;
   grid-template-areas: 
   "h3 img"
   "p img"
